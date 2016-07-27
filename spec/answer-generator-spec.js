@@ -6,7 +6,6 @@ describe('Answer Generator', ()=> {
         const isUnique = (item, index, array) => {
             return array.lastIndexOf(item) === index;
         };
-
         const answer = Answer.generator();
         expect(answer.length).toEqual(4);
         expect(answer.split('').every(isUnique)).toBeTruthy();
