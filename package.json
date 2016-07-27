@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/XLuoChen/lab-guess-number-exam/issues"
   },
-  "homepage": "https://github.com/XLuoChen/lab-guess-number-exam#readme"
+  "homepage": "https://github.com/XLuoChen/lab-guess-number-exam#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
 }
