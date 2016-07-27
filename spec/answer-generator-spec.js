@@ -1,4 +1,4 @@
-const AnswerGenerator = require('../src/compare-number');
+const AnswerGenerator = require('../src/answer-generator');
 
 describe('AnswerGenerator', () => {
   it('should generateAnswer', () => {
