@@ -4,7 +4,7 @@ class CompareNumber{
         const answers = answer.split('');
 
         const rightNumber = inputs.filter(c => answers.includes(c)).length;
-        const x = answers.filter(c => inputs.indexOf(c) === answers.indexOf(c)).length;
+        const x = inputs.filter(c => inputs.indexOf(c) === answers.indexOf(c)).length;
         const y = rightNumber - x;
 
         return `${x}A${y}B`;

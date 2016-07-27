@@ -3,7 +3,7 @@ const AnswerGenerator = require('../main/answer-generator');
 describe('AnswerGenerator',()=>{
     it('should generate answer',()=>{
         const isUnique = (item,index,array)=>{
-            return array.indexOf(item)=== index;
+            return array.lastIndexOf(item)=== index;
         };
 
         const answer = AnswerGenerator.generate();
