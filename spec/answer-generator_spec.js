@@ -7,7 +7,7 @@ describe('answer generator',()=>{
         }
         const answer=AnswerGenerator.generator();
         expect(answer.length).toEqual(4);
-        expect(answer.split('').every(isUnique)).toBeTruthy()
+        expect(answer.split('').every(isUnique)).toBeTruthy();
         expect(AnswerGenerator.generator()).not.toEqual(AnswerGenerator.generator());
     });
 });
