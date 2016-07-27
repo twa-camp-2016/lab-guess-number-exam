@@ -1,8 +1,10 @@
 const GeneratorRandom = require('../src/app');
 
+
 describe('generator random',()=>{
 
     it("should generate random",()=>{
+
         const isUnique = (item,index,array)=>{
             return array.lastIndexOf(item) === index
         };
