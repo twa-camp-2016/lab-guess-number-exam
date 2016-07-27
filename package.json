@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RuyuYou/lab-guess-number-exam#readme",
   "dependencies": {
-    "jasmine": "^2.4.1"
+    "jasmine": "^2.4.1",
+    "mock-stdin": "^0.3.0"
   }
 }
