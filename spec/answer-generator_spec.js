@@ -6,7 +6,6 @@ describe('answer generator',()=>{
             return   array.lastIndexOf(item)===index;
         }
         const answer=AnswerGenerator.generator();
-        expect(answer.length).toEqual(4);
         expect(answer.split('').every(isUnique)).toBeTruthy();
         expect(AnswerGenerator.generator()).not.toEqual(AnswerGenerator.generator());
     });

@@ -19,8 +19,8 @@ class Game{
                 }else{
                     console.log(result);
                     this.chances--;
-                    if(!this.isGameOver()){
-                        console.log('Game Over!');
+                    if(this.isGameOver()){
+                        console.log('Game Over!\n');
                         console.log(`Answer:${this.answer}`);
                         process.exit();
                     }else{
@@ -32,12 +32,12 @@ class Game{
     }
 
     start(){
-        console.log('Welcome!');
+        console.log('Welcome!\n');
         this.ask();
     }
 
     ask(){
-        console.log(`please input your number(${this.chances})`);
+        console.log(`please input your number(${this.chances}):`);
     }
 
     validate(input){
