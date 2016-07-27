@@ -6,7 +6,7 @@ class Game {
   static start() {
     console.log('Welcome!');
     const answer = Answer.getRandomNumber();
-    for (let i = 6; i > 0; i++) {
+    for (let i = 6; i > 0; i--) {
       console.log(`\nPlease input your number(${i}):`);
       let number = '';
       while(1){
@@ -21,7 +21,7 @@ class Game {
         console.log('Congratulations!');return;
       }
       if (i===1) {
-        console.log('Game Over');
+        console.log('Game Over');return;
       }
       console.log(compareNumber);
 
