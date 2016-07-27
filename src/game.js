@@ -9,16 +9,16 @@ class Game {
         for (let i = 6; i > 0; i--) {
             console.log(`Please input your number(${i}):`);
             const input = this.inputNumber();
-            if(!input.split('').every(this.isunit)){
+            if (!input.split('').every(this.isunit)) {
                 console.log('Cannot input duplicate numbers!\n');
                 return;
             }
-            const  result=CompareNumber.compareNumber(input,AnswerGenerator.generate());
-            if(result==='4A0B'){
+            const result = CompareNumber.compareNumber(input, AnswerGenerator.generate());
+            if (result === '4A0B') {
                 console.log('Congratulations!\n');
                 return;
             }
-            
+
             else {
                 console.log(result)
             }
@@ -37,4 +37,4 @@ class Game {
     }
 }
 
-module.exports=Game;
+module.exports = Game;
