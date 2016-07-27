@@ -7,15 +7,15 @@ describe('Game', () => {
     beforeEach(()=> {
         spyOn(AnswerGenerator, 'generate').and.returnValue('1234');
         spyOn(console, 'log');
-        spyON(process, 'exit');
+        spyOn(process, 'exit');
 
         const game = new Game();
         game.start();
     });
 
     it('should congrats user when guess right answer', ()=> {
-        expect(console.log).toHaveBeenCalledWith('Welcome');
-        expect(console.log).toHaveBeenCalledWith('Please user your numbers(6)');
+        expect(console.log).toHaveBeenCalledWith('Welcome\n');
+        expect(console.log).toHaveBeenCalledWith('Please input your numbers(6):');
         stdin.send('1234');
         expect(console.log).toHaveBeenCalledWith('Congratulation');
         expect(process.exit).toHaveBeenCalled();
