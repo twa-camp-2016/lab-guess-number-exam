@@ -1,0 +1,7 @@
+{
+  "name": "lab-guess-number-exam",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jasmine"
+  }
+}
