@@ -18,6 +18,11 @@ describe('Compare number', () => {
                 answer: '1243',
                 result: '2A2B'
             },
+            {
+                input: '1234',
+                answer: '4321',
+                result: '0A4B'
+            },
         ].forEach((example) => {
             const result = CompareNumber.compare(example.input, example.answer);
             expect(result).toEqual(example.result)
