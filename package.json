@@ -1,0 +1,19 @@
+
+  "name": "lab-guess-number-exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzhlu/lab-guess-number-exam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zzhlu/lab-guess-number-exam/issues"
+  },
+  "homepage": "https://github.com/zzhlu/lab-guess-number-exam#readme"
+}
