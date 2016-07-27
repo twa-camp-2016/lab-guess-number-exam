@@ -1,18 +1,18 @@
 const stdin = require('mock-stdin').stdin();
 const AnswerGenerator = require('../src/models/AnswerGenerator');
-const Game = require('../src/models/Game');
+const Game = require('../src/app');
 
 describe('play game', () => {
+
     beforeEach(() => {
         spyOn(AnswerGenerator, 'generator').and.returnValue('1234');
         spyOn(console, 'log');
         spyOn(process, 'exit');
-
-        const game = new Game();
-        game.start();
+        new Game().start();
     });
 
     it('input right answer get Congratulations!', () => {
+
         expect(console.log).toHaveBeenCalledWith('Welcome!\n');
         expect(console.log).toHaveBeenCalledWith('Please input your number(6):');
 
@@ -22,7 +22,9 @@ describe('play game', () => {
     });
 
     it('get run out of chance', () => {
+
         expect(console.log).toHaveBeenCalledWith('Welcome!\n');
+
         for (let i = 6; i > 0; i--) {
             expect(console.log).toHaveBeenCalledWith(`Please input your number(${i}):`);
             stdin.send('1235');
@@ -35,6 +37,7 @@ describe('play game', () => {
     });
 
     it('should prompt invalid input', () => {
+
         expect(console.log).toHaveBeenCalledWith('Welcome!\n');
         expect(console.log).toHaveBeenCalledWith('Please input your number(6):');
 
