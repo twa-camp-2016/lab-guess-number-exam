@@ -19,7 +19,8 @@ class Game{
                 this.chances--;
 
                 if(this.isGameOver()){
-                    console.log('Game over');
+                    console.log('Game Over\n');
+                    console.log(`Answer:${this.answer}`);
                     process.exit();
                 }else{
                     this.ask();
