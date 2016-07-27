@@ -5,6 +5,7 @@
     "test": "jasmine"
   },
   "devDependencies": {
-    "jasmine": "^2.4.1"
+    "jasmine": "^2.4.1",
+    "mock-stdin": "^0.3.0"
   }
 }
