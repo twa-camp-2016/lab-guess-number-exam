@@ -6,7 +6,7 @@ class AnswerGenerator {
     const result = [];
 
     for (let i = 0; i < 4; i++) {
-      const digit = parseInt(Math.random * digits.length);
+      const digit = parseInt(Math.random() * digits.length);
       result.push(digits.splice(digit, 1)[0]);
     }
 
