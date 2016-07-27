@@ -1,15 +1,20 @@
-const  CompareNumber = require('./compare-number');
-const  GeneratorRandom = require('./generator-random');
+'use strict';
+const CompareNumbers = require('./compare-numbers');
+const GenerateAnswer = require('./answer-generator');
 
-function compare(answer,input){
+function compare(input,answer){
+    const result = CompareNumbers.caculate(input,answer);
 
-    const result = CompareNumber.compareNumbers(answer,input);
     return result;
 }
 
 function generate(){
 
-    return GeneratorRandom.generate();
+    const result = GenerateAnswer.generateNumbers();
+
+    return result;
 }
+
+
 exports.compare = compare;
 exports.generate = generate;
