@@ -20,4 +20,11 @@ describe('Game', () => {
         expect(console.log).toHaveBeenCalledWith('Congratulation');
         expect(process.exit).toHaveBeenCalled();
     });
+
+    it('Cannot input duplicate number', ()=> {
+        expect(console.log).toHaveBeenCalledWith('Welcome\n');
+        expect(console.log).toHaveBeenCalledWith('Please input your numbers(6):');
+        stdin.send('1233');
+        expect(console.log).toHaveBeenCalledWith('Cannot input duplicate number');
+    });
 });
