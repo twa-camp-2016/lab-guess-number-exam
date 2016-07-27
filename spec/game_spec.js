@@ -1,10 +1,10 @@
-const AnswerGenerator = require('../src/answer');
+const Answer = require('../src/answer');
 const Game = require('../src/game');
 
 describe('Game', ()=> {
 
     beforeEach(() => {
-        spyOn(AnswerGenerator,'generate').and.returnValue('1234');
+        spyOn(Answer,'generate').and.returnValue('1234');
         spyOn(console, 'log');
 
     });
