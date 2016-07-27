@@ -4,9 +4,9 @@ describe('answer',()=>{
         const isUnque=(item,index,array)=>{
             return array.lastIndexOf(item) === index;
         };
-        const result = Answer.putAnswer();
+        const result = Answer.putAnswer().split('');
         expect(result.length).toEqual(4);
-        expect(result.split('').every(isUnque)).toBeTruthy();
+        expect(result.every(isUnque)).toBeTruthy();
         expect(Answer.putAnswer()).not.toEqual(Answer.putAnswer());
     })
 });
