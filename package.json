@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/zhangtiantian10/lab-guess-number-exam/issues"
   },
-  "homepage": "https://github.com/zhangtiantian10/lab-guess-number-exam#readme"
+  "homepage": "https://github.com/zhangtiantian10/lab-guess-number-exam#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "mock-stdin": "^0.3.0"
+  }
 }
