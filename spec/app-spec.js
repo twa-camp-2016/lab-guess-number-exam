@@ -37,6 +37,19 @@ describe('Game',()=> {
         expect(process.exit).toHaveBeenCalled();
     });
 
+    it('should print the error information',()=>{
+        expect(console.log).toHaveBeenCalledWith('Welcome!\n');
+        expect(console.log).toHaveBeenCalledWith(`Please input your number(6):`);
+        
+        stdin.send('5521');
+
+        expect(console.log).toHaveBeenCalledWith('Cannot input duplicate numbers!');
+    });
+
 });
+
+
+
+
 
 
