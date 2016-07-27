@@ -1,17 +1,17 @@
-class AnswerGenerator {
+"use strict";
 
-  static answerGenerator() {
+const AnswerGenerator = require('../src/answer-generator');
 
-    const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    const result = [];
+describe('Answer Generator', () => {
 
-    for (let i = 0; i < 4; i++) {
-      const digit = parseInt(Math.random * digits.length);
-      result.push(digits.splice(digit, 1)[0]);
-    }
-    
-    return result.join('');
-  }
-}
+  it('generator answer', () => {
+    const isUnique = (item, index, array) => {
+      return array.lastIndexOf(item) === index;
+    };
 
-module.exports = AnswerGenerator;
+    const answer = AnswerGenerator.answerGenerator();
+    expect(answer.length).toEqual(4);
+    expect(answer.split('').every(isUnique)).toBeTruthy();
+    expect(AnswerGenerator.answerGenerator()).not.toEqual(AnswerGenerator.answerGenerator());
+  });
+});
