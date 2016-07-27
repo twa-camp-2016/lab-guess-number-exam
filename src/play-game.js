@@ -21,6 +21,8 @@ class PlayGame {
                if(this.isGameOver()) {
                    console.log('Game Over\n');
                    console.log(`Answer: ${this.answer}`);
+               } else {
+                   this.ask();
                }
            }
         });
