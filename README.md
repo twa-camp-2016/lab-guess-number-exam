@@ -1,1 +1,1 @@
-# lib-room-guess-number-exam
+# lab-guess-number-exam
