@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/XLuoChen/lab-guess-number-exam#readme",
   "devDependencies": {
-    "jasmine": "^2.4.1"
+    "jasmine": "^2.4.1",
+    "mock-stdin": "^0.3.0"
   }
 }
