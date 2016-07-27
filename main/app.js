@@ -33,7 +33,7 @@ class Game {
     }
 
     start() {
-        console.log('Welcome!');
+        console.log('Welcome!\n');
         this.printNum();
     }
 
