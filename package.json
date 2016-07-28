@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/zhaoTongTong/lab-guess-number-exam#readme",
   "devDependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
     "jasmine": "^2.4.1",
-    "mock-stdin": "^0.3.0"
+    "mock-stdin": "^0.3.0",
+    "request": "^2.74.0",
+    "scanf": "^0.7.2"
   }
 }
