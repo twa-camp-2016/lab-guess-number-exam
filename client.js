@@ -7,13 +7,15 @@ const getAnswer = {
 };
 
 let chance = 6;
+let answer;
 request(getAnswer, (err, res, body) => {
-  const answer = body;
+  answer = body;
+});
   start();
 
   process.stdin.setEncoding('utf8');
   process.stdin.on('data', (input) => {
-    if(!(validate(input) || input.length != 4)) {
+    if(!(validate(input) || input.trim().length != 4)) {
       console.log('Cannot input duplicate numbers!');
       ask();
     }else {
@@ -45,7 +47,7 @@ request(getAnswer, (err, res, body) => {
       });
     }
   });
-});
+
 
 function ask() {
   console.log(`Please input your number(${chance})`);
