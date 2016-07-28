@@ -1,11 +1,15 @@
 'use strict'
 
-class CompareNum{
-  static compare(inputs, answer) {
-    const countOfA = inputs.split('').map((input, index) => answer.lastIndexOf(input) === index? 1 : 0).reduce((a, b)=> a+b);
-    const countOfB = inputs.split('').map((input, index) => answer.lastIndexOf(input) !== index && answer.split('').find(element => element === input) ? 1 : 0).reduce((a, b) => a+b);
+class CompareNum {
+  static compare(input, answer) {
+    const inputs = input.split('');
+    const answers = answer.split('');
 
-    return `${countOfA}A${countOfB}B`;
+    const rightDigitCount = inputs.filter(a => answers.includes(a)).length;
+    const x = inputs.filter(a => answers.indexOf(a) === inputs.indexOf(a)).length;
+    const y = rightDigitCount - x;
+
+    return `${x}A${y}B`;
   }
 }
 
