@@ -1,0 +1,25 @@
+{
+  "name": "lab-guess-number-exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baiying1314/lab-guess-number-exam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baiying1314/lab-guess-number-exam/issues"
+  },
+  "homepage": "https://github.com/baiying1314/lab-guess-number-exam#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  },
+  "dependencies": {
+    "mock-stdin": "^0.3.0"
+  }
+}
