@@ -1,4 +1,4 @@
-# lab-guess-number-exam反思与总结
+# guess-number反思与总结
 
 ###1、建node项目部分：速度比之前快了许多（用了cnpm的原因和多练习的结果）<br/>
 ###2、git 提交部分：.git删不删的问题和要不要init的问题思考了一会，最后才懂<br/>
